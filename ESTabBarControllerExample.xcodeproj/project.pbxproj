@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C0EAE472743E2890056F76B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EAE462743E2890056F76B /* TableViewController.swift */; };
 		2C0EAE492743E3BE0056F76B /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EAE482743E3BE0056F76B /* download.png */; };
-		2C6D10C12744F1F0001B2B86 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D10C02744F1F0001B2B86 /* pop.framework */; };
-		2C6D10C22744F1F0001B2B86 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D10C02744F1F0001B2B86 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CBD7EB72744C9E90090263D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD7EAE2744C9E90090263D /* Localizable.strings */; };
 		2CBD7EB82744C9E90090263D /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */; };
 		2CBD7EB92744C9E90090263D /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB12744C9E90090263D /* ESTabBarController.swift */; };
@@ -61,7 +59,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C6D10C22744F1F0001B2B86 /* pop.framework in Embed Frameworks */,
 				F6EE45851E4AC1FF001E0FA1 /* ESTabBarController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -72,7 +69,6 @@
 /* Begin PBXFileReference section */
 		2C0EAE462743E2890056F76B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2C0EAE482743E3BE0056F76B /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
-		2C6D10C02744F1F0001B2B86 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = ESTabBarControllerExample/Framework/pop.framework; sourceTree = "<group>"; };
 		2CBD7EAF2744C9E90090263D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
 		2CBD7EB12744C9E90090263D /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
@@ -114,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6D10C12744F1F0001B2B86 /* pop.framework in Frameworks */,
 				F6EE45841E4AC1FF001E0FA1 /* ESTabBarController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +191,6 @@
 		7594959D258860A700C80CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C6D10C02744F1F0001B2B86 /* pop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
