@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		2C0EAE472743E2890056F76B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EAE462743E2890056F76B /* TableViewController.swift */; };
 		2C0EAE492743E3BE0056F76B /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EAE482743E3BE0056F76B /* download.png */; };
-		3C69F8171EF81895009D5F4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C69F8191EF81895009D5F4A /* Localizable.strings */; };
+		2CBD7EB72744C9E90090263D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD7EAE2744C9E90090263D /* Localizable.strings */; };
+		2CBD7EB82744C9E90090263D /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */; };
+		2CBD7EB92744C9E90090263D /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB12744C9E90090263D /* ESTabBarController.swift */; };
+		2CBD7EBA2744C9E90090263D /* ESTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB22744C9E90090263D /* ESTabBarItemContentView.swift */; };
+		2CBD7EBB2744C9E90090263D /* ESTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB32744C9E90090263D /* ESTabBarItem.swift */; };
+		2CBD7EBC2744C9E90090263D /* ESTabBarItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB42744C9E90090263D /* ESTabBarItemBadgeView.swift */; };
+		2CBD7EBD2744C9E90090263D /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB52744C9E90090263D /* ESTabBar.swift */; };
+		2CBD7EBE2744C9E90090263D /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB62744C9E90090263D /* ESTabBarItemContainer.swift */; };
 		7594959E258860A700C80CF6 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6858F401E4F435C002DAF6C /* Lottie.framework */; };
 		F6858F411E4F435C002DAF6C /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F3F1E4F435C002DAF6C /* IconTransitions.json */; };
 		F6858F441E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6858F431E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift */; };
@@ -31,13 +38,6 @@
 		F6EE45811E4AC1FF001E0FA1 /* ESTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EE457F1E4AC1FF001E0FA1 /* ESTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6EE45841E4AC1FF001E0FA1 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE457D1E4AC1FF001E0FA1 /* ESTabBarController.framework */; };
 		F6EE45851E4AC1FF001E0FA1 /* ESTabBarController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE457D1E4AC1FF001E0FA1 /* ESTabBarController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6EE458C1E4AC263001E0FA1 /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE458A1E4AC263001E0FA1 /* ESTabBarController.swift */; };
-		F6EE458F1E4AC3FC001E0FA1 /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE458D1E4AC3FC001E0FA1 /* ESTabBar.swift */; };
-		F6EE45921E4AC6B0001E0FA1 /* ESTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45901E4AC6B0001E0FA1 /* ESTabBarItem.swift */; };
-		F6EE45951E4ACB60001E0FA1 /* ESTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45931E4ACB60001E0FA1 /* ESTabBarItemContentView.swift */; };
-		F6EE45981E4AEB84001E0FA1 /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45961E4AEB84001E0FA1 /* ESTabBarItemContainer.swift */; };
-		F6EE459D1E4C0940001E0FA1 /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE459B1E4C0940001E0FA1 /* ESTabBarItemMoreContentView.swift */; };
-		F6EE45A01E4C360A001E0FA1 /* ESTabBarItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE459E1E4C360A001E0FA1 /* ESTabBarItemBadgeView.swift */; };
 		F6EE45A21E4C4BC5001E0FA1 /* ExampleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45A11E4C4BC4001E0FA1 /* ExampleProvider.swift */; };
 		F6EE45A51E4C4D72001E0FA1 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45A31E4C4D72001E0FA1 /* ExampleViewController.swift */; };
 		F6EE45A61E4C4D72001E0FA1 /* ExampleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45A41E4C4D72001E0FA1 /* ExampleNavigationController.swift */; };
@@ -76,7 +76,14 @@
 /* Begin PBXFileReference section */
 		2C0EAE462743E2890056F76B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2C0EAE482743E3BE0056F76B /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
-		3C69F8181EF81895009D5F4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CBD7EAF2744C9E90090263D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
+		2CBD7EB12744C9E90090263D /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
+		2CBD7EB22744C9E90090263D /* ESTabBarItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContentView.swift; sourceTree = "<group>"; };
+		2CBD7EB32744C9E90090263D /* ESTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItem.swift; sourceTree = "<group>"; };
+		2CBD7EB42744C9E90090263D /* ESTabBarItemBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemBadgeView.swift; sourceTree = "<group>"; };
+		2CBD7EB52744C9E90090263D /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
+		2CBD7EB62744C9E90090263D /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
 		F6858F3F1E4F435C002DAF6C /* IconTransitions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IconTransitions.json; sourceTree = "<group>"; };
 		F6858F401E4F435C002DAF6C /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lottie.framework; sourceTree = "<group>"; };
 		F6858F431E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleLottieAnimateContentView.swift; sourceTree = "<group>"; };
@@ -98,13 +105,6 @@
 		F6EE457D1E4AC1FF001E0FA1 /* ESTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EE457F1E4AC1FF001E0FA1 /* ESTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESTabBarController.h; sourceTree = "<group>"; };
 		F6EE45801E4AC1FF001E0FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6EE458A1E4AC263001E0FA1 /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
-		F6EE458D1E4AC3FC001E0FA1 /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
-		F6EE45901E4AC6B0001E0FA1 /* ESTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItem.swift; sourceTree = "<group>"; };
-		F6EE45931E4ACB60001E0FA1 /* ESTabBarItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContentView.swift; sourceTree = "<group>"; };
-		F6EE45961E4AEB84001E0FA1 /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
-		F6EE459B1E4C0940001E0FA1 /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
-		F6EE459E1E4C360A001E0FA1 /* ESTabBarItemBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemBadgeView.swift; sourceTree = "<group>"; };
 		F6EE45A11E4C4BC4001E0FA1 /* ExampleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleProvider.swift; sourceTree = "<group>"; };
 		F6EE45A31E4C4D72001E0FA1 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		F6EE45A41E4C4D72001E0FA1 /* ExampleNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleNavigationController.swift; sourceTree = "<group>"; };
@@ -135,6 +135,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CBD7EAD2744C9E90090263D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2CBD7EAE2744C9E90090263D /* Localizable.strings */,
+				2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */,
+				2CBD7EB12744C9E90090263D /* ESTabBarController.swift */,
+				2CBD7EB22744C9E90090263D /* ESTabBarItemContentView.swift */,
+				2CBD7EB32744C9E90090263D /* ESTabBarItem.swift */,
+				2CBD7EB42744C9E90090263D /* ESTabBarItemBadgeView.swift */,
+				2CBD7EB52744C9E90090263D /* ESTabBar.swift */,
+				2CBD7EB62744C9E90090263D /* ESTabBarItemContainer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		7594959025875BF100C80CF6 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,8 +253,8 @@
 		F6EE45561E4AC173001E0FA1 /* ESTabBarControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				2CBD7EAD2744C9E90090263D /* Sources */,
 				2C0EAE482743E3BE0056F76B /* download.png */,
-				F6EE45691E4AC18D001E0FA1 /* Sources */,
 				F6EE45571E4AC173001E0FA1 /* AppDelegate.swift */,
 				F6EE45591E4AC173001E0FA1 /* ViewController.swift */,
 				F6EE45A11E4C4BC4001E0FA1 /* ExampleProvider.swift */,
@@ -255,22 +270,6 @@
 				F6EE45AC1E4C6085001E0FA1 /* Framework */,
 			);
 			path = ESTabBarControllerExample;
-			sourceTree = "<group>";
-		};
-		F6EE45691E4AC18D001E0FA1 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				F6EE458A1E4AC263001E0FA1 /* ESTabBarController.swift */,
-				F6EE458D1E4AC3FC001E0FA1 /* ESTabBar.swift */,
-				F6EE45901E4AC6B0001E0FA1 /* ESTabBarItem.swift */,
-				F6EE45961E4AEB84001E0FA1 /* ESTabBarItemContainer.swift */,
-				F6EE45931E4ACB60001E0FA1 /* ESTabBarItemContentView.swift */,
-				F6EE459B1E4C0940001E0FA1 /* ESTabBarItemMoreContentView.swift */,
-				F6EE459E1E4C360A001E0FA1 /* ESTabBarItemBadgeView.swift */,
-				3C69F8191EF81895009D5F4A /* Localizable.strings */,
-			);
-			name = Sources;
-			path = ../../Sources;
 			sourceTree = "<group>";
 		};
 		F6EE457E1E4AC1FF001E0FA1 /* ESTabBarController */ = {
@@ -403,6 +402,7 @@
 				F6858F411E4F435C002DAF6C /* IconTransitions.json in Resources */,
 				F6EE455F1E4AC173001E0FA1 /* Assets.xcassets in Resources */,
 				F6EE45AA1E4C4DA3001E0FA1 /* WebView.storyboard in Resources */,
+				2CBD7EB72744C9E90090263D /* Localizable.strings in Resources */,
 				2C0EAE492743E3BE0056F76B /* download.png in Resources */,
 				F6EE455D1E4AC173001E0FA1 /* Main.storyboard in Resources */,
 			);
@@ -412,7 +412,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C69F8171EF81895009D5F4A /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +425,17 @@
 				F6EE45A51E4C4D72001E0FA1 /* ExampleViewController.swift in Sources */,
 				F6858F551E4F516F002DAF6C /* ExampleBouncesContentView.swift in Sources */,
 				F6EE455A1E4AC173001E0FA1 /* ViewController.swift in Sources */,
+				2CBD7EBC2744C9E90090263D /* ESTabBarItemBadgeView.swift in Sources */,
+				2CBD7EBB2744C9E90090263D /* ESTabBarItem.swift in Sources */,
 				F6858F571E4F516F002DAF6C /* ExampleIrregularityContentView.swift in Sources */,
+				2CBD7EBE2744C9E90090263D /* ESTabBarItemContainer.swift in Sources */,
 				F6858F561E4F516F002DAF6C /* ExampleHighlightableContentView.swift in Sources */,
+				2CBD7EBD2744C9E90090263D /* ESTabBar.swift in Sources */,
 				F6EE45A61E4C4D72001E0FA1 /* ExampleNavigationController.swift in Sources */,
 				F6858F441E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift in Sources */,
+				2CBD7EB92744C9E90090263D /* ESTabBarController.swift in Sources */,
 				F6EE45A21E4C4BC5001E0FA1 /* ExampleProvider.swift in Sources */,
+				2CBD7EB82744C9E90090263D /* ESTabBarItemMoreContentView.swift in Sources */,
 				F6858F521E4F516F002DAF6C /* ExampleAnimateTipsContentView.swift in Sources */,
 				F6858F531E4F516F002DAF6C /* ExampleBackgroundContentView.swift in Sources */,
 				F6858F541E4F516F002DAF6C /* ExampleBasicContentView.swift in Sources */,
@@ -438,6 +443,7 @@
 				F6858F581E4F516F002DAF6C /* ExampleTipsContentView.swift in Sources */,
 				2C0EAE472743E2890056F76B /* TableViewController.swift in Sources */,
 				F6EE45581E4AC173001E0FA1 /* AppDelegate.swift in Sources */,
+				2CBD7EBA2744C9E90090263D /* ESTabBarItemContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,13 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EE458C1E4AC263001E0FA1 /* ESTabBarController.swift in Sources */,
-				F6EE45921E4AC6B0001E0FA1 /* ESTabBarItem.swift in Sources */,
-				F6EE459D1E4C0940001E0FA1 /* ESTabBarItemMoreContentView.swift in Sources */,
-				F6EE458F1E4AC3FC001E0FA1 /* ESTabBar.swift in Sources */,
-				F6EE45A01E4C360A001E0FA1 /* ESTabBarItemBadgeView.swift in Sources */,
-				F6EE45951E4ACB60001E0FA1 /* ESTabBarItemContentView.swift in Sources */,
-				F6EE45981E4AEB84001E0FA1 /* ESTabBarItemContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,10 +465,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3C69F8191EF81895009D5F4A /* Localizable.strings */ = {
+		2CBD7EAE2744C9E90090263D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C69F8181EF81895009D5F4A /* en */,
+				2CBD7EAF2744C9E90090263D /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -611,7 +610,6 @@
 		F6EE45671E4AC173001E0FA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEVELOPMENT_TEAM = A367N9R36B;
@@ -638,7 +636,6 @@
 		F6EE45681E4AC173001E0FA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEVELOPMENT_TEAM = A367N9R36B;
