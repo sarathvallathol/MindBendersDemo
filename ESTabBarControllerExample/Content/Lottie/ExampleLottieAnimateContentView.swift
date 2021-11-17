@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Lottie
 import ESTabBarController
 
 class ExampleLottieAnimateBasicContentView: ESTabBarItemContentView {
@@ -24,41 +23,4 @@ class ExampleLottieAnimateBasicContentView: ESTabBarItemContentView {
         fatalError("init(coder:) has not been implemented")
     }
     
-}
-
-
-class ExampleLottieAnimateContentView: ExampleLottieAnimateBasicContentView {
-
-    let lottieView: LAAnimationView! = {
-        let lottieView = LAAnimationView.animationNamed("IconTransitions")
-        lottieView?.loopAnimation = true
-        lottieView?.contentMode = .scaleAspectFit
-        lottieView?.play()
-        return lottieView
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.addSubview(lottieView)
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func updateLayout() {
-        super.updateLayout()
-        lottieView.frame = self.bounds.insetBy(dx: -2, dy: -2)
-    }
-    
-    override func selectAnimation(animated: Bool, completion: (() -> ())?) {
-        super.selectAnimation(animated: animated, completion: nil)
-        lottieView.pause()
-    }
-    
-    override func deselectAnimation(animated: Bool, completion: (() -> ())?) {
-        super.deselectAnimation(animated: animated, completion: nil)
-        lottieView.play()
-    }
-
 }

@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     private func updateNavigationBarAppearance() {
-        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().barTintColor = .yellow 
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

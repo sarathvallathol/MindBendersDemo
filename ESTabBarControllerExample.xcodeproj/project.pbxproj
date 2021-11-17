@@ -17,11 +17,10 @@
 		2CBD7EBC2744C9E90090263D /* ESTabBarItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB42744C9E90090263D /* ESTabBarItemBadgeView.swift */; };
 		2CBD7EBD2744C9E90090263D /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB52744C9E90090263D /* ESTabBar.swift */; };
 		2CBD7EBE2744C9E90090263D /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB62744C9E90090263D /* ESTabBarItemContainer.swift */; };
-		7594959E258860A700C80CF6 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6858F401E4F435C002DAF6C /* Lottie.framework */; };
+		2CBD7EBF2744D4E80090263D /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE45AD1E4C6085001E0FA1 /* pop.framework */; };
+		2CBD7EC02744D4E80090263D /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE45AD1E4C6085001E0FA1 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6858F411E4F435C002DAF6C /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F3F1E4F435C002DAF6C /* IconTransitions.json */; };
 		F6858F441E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6858F431E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift */; };
-		F6858F461E4F4384002DAF6C /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6858F401E4F435C002DAF6C /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F6858F471E4F4394002DAF6C /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6858F401E4F435C002DAF6C /* Lottie.framework */; };
 		F6858F491E4F45A9002DAF6C /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F481E4F45A9002DAF6C /* LottieLogo1.json */; };
 		F6858F521E4F516F002DAF6C /* ExampleAnimateTipsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6858F4B1E4F516F002DAF6C /* ExampleAnimateTipsContentView.swift */; };
 		F6858F531E4F516F002DAF6C /* ExampleBackgroundContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6858F4C1E4F516F002DAF6C /* ExampleBackgroundContentView.swift */; };
@@ -43,8 +42,6 @@
 		F6EE45A61E4C4D72001E0FA1 /* ExampleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45A41E4C4D72001E0FA1 /* ExampleNavigationController.swift */; };
 		F6EE45AA1E4C4DA3001E0FA1 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EE45A81E4C4DA3001E0FA1 /* WebView.storyboard */; };
 		F6EE45AB1E4C4DA3001E0FA1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EE45A91E4C4DA3001E0FA1 /* WebViewController.swift */; };
-		F6EE45AE1E4C6085001E0FA1 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE45AD1E4C6085001E0FA1 /* pop.framework */; };
-		F6EE45B01E4C6094001E0FA1 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE45AD1E4C6085001E0FA1 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +61,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F6EE45B01E4C6094001E0FA1 /* pop.framework in Embed Frameworks */,
 				F6EE45851E4AC1FF001E0FA1 /* ESTabBarController.framework in Embed Frameworks */,
-				F6858F461E4F4384002DAF6C /* Lottie.framework in Embed Frameworks */,
+				2CBD7EC02744D4E80090263D /* pop.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,10 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EE45AE1E4C6085001E0FA1 /* pop.framework in Frameworks */,
-				7594959E258860A700C80CF6 /* Lottie.framework in Frameworks */,
+				2CBD7EBF2744D4E80090263D /* pop.framework in Frameworks */,
 				F6EE45841E4AC1FF001E0FA1 /* ESTabBarController.framework in Frameworks */,
-				F6858F471E4F4394002DAF6C /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +196,7 @@
 		7594959D258860A700C80CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6EE45AD1E4C6085001E0FA1 /* pop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,7 +262,6 @@
 				F6EE455E1E4AC173001E0FA1 /* Assets.xcassets */,
 				F6EE45601E4AC173001E0FA1 /* LaunchScreen.storyboard */,
 				F6EE45631E4AC173001E0FA1 /* Info.plist */,
-				F6EE45AC1E4C6085001E0FA1 /* Framework */,
 			);
 			path = ESTabBarControllerExample;
 			sourceTree = "<group>";
@@ -288,14 +282,6 @@
 				F6EE45A91E4C4DA3001E0FA1 /* WebViewController.swift */,
 			);
 			path = Me;
-			sourceTree = "<group>";
-		};
-		F6EE45AC1E4C6085001E0FA1 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				F6EE45AD1E4C6085001E0FA1 /* pop.framework */,
-			);
-			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -619,8 +605,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ESTabBarControllerExample/Framework",
-					"$(PROJECT_DIR)/ESTabBarControllerExample/Lottie",
-					"$(PROJECT_DIR)/ESTabBarControllerExample/Content/Lottie",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ESTabBarControllerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -643,8 +628,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ESTabBarControllerExample/Framework",
-					"$(PROJECT_DIR)/ESTabBarControllerExample/Lottie",
-					"$(PROJECT_DIR)/ESTabBarControllerExample/Content/Lottie",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ESTabBarControllerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;

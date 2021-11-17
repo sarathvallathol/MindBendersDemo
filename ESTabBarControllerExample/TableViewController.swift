@@ -19,7 +19,6 @@ class TableViewController: UIViewController {
         nav.barTintColor = UIColor.yellow
         // 2
         nav.barStyle = UIBarStyle.black
-        nav.tintColor = UIColor.yellow
 
         // 4
         let image = UIImage(named: "download")
