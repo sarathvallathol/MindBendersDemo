@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C0EAE472743E2890056F76B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EAE462743E2890056F76B /* TableViewController.swift */; };
 		2C0EAE492743E3BE0056F76B /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EAE482743E3BE0056F76B /* download.png */; };
+		2C6D10C12744F1F0001B2B86 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D10C02744F1F0001B2B86 /* pop.framework */; };
+		2C6D10C22744F1F0001B2B86 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D10C02744F1F0001B2B86 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CBD7EB72744C9E90090263D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD7EAE2744C9E90090263D /* Localizable.strings */; };
 		2CBD7EB82744C9E90090263D /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */; };
 		2CBD7EB92744C9E90090263D /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB12744C9E90090263D /* ESTabBarController.swift */; };
@@ -17,8 +19,6 @@
 		2CBD7EBC2744C9E90090263D /* ESTabBarItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB42744C9E90090263D /* ESTabBarItemBadgeView.swift */; };
 		2CBD7EBD2744C9E90090263D /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB52744C9E90090263D /* ESTabBar.swift */; };
 		2CBD7EBE2744C9E90090263D /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7EB62744C9E90090263D /* ESTabBarItemContainer.swift */; };
-		2CBD7EBF2744D4E80090263D /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE45AD1E4C6085001E0FA1 /* pop.framework */; };
-		2CBD7EC02744D4E80090263D /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE45AD1E4C6085001E0FA1 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6858F411E4F435C002DAF6C /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F3F1E4F435C002DAF6C /* IconTransitions.json */; };
 		F6858F441E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6858F431E4F436F002DAF6C /* ExampleLottieAnimateContentView.swift */; };
 		F6858F491E4F45A9002DAF6C /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = F6858F481E4F45A9002DAF6C /* LottieLogo1.json */; };
@@ -61,8 +61,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2C6D10C22744F1F0001B2B86 /* pop.framework in Embed Frameworks */,
 				F6EE45851E4AC1FF001E0FA1 /* ESTabBarController.framework in Embed Frameworks */,
-				2CBD7EC02744D4E80090263D /* pop.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +72,7 @@
 /* Begin PBXFileReference section */
 		2C0EAE462743E2890056F76B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2C0EAE482743E3BE0056F76B /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		2C6D10C02744F1F0001B2B86 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = ESTabBarControllerExample/Framework/pop.framework; sourceTree = "<group>"; };
 		2CBD7EAF2744C9E90090263D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CBD7EB02744C9E90090263D /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
 		2CBD7EB12744C9E90090263D /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		F6EE45A41E4C4D72001E0FA1 /* ExampleNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleNavigationController.swift; sourceTree = "<group>"; };
 		F6EE45A81E4C4DA3001E0FA1 /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		F6EE45A91E4C4DA3001E0FA1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		F6EE45AD1E4C6085001E0FA1 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBD7EBF2744D4E80090263D /* pop.framework in Frameworks */,
+				2C6D10C12744F1F0001B2B86 /* pop.framework in Frameworks */,
 				F6EE45841E4AC1FF001E0FA1 /* ESTabBarController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 		7594959D258860A700C80CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6EE45AD1E4C6085001E0FA1 /* pop.framework */,
+				2C6D10C02744F1F0001B2B86 /* pop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
